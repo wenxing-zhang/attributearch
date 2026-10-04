@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "N": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "E": {
+      "item": "minecraft:enchanting_table"
+    },
+    "A": {
+      "item": "minecraft:amethyst_block"
+    },
+    "P": {
+      "item": "attributearch:attribute_altar"
+    },
+    "O": {
+      "item": "minecraft:obsidian"
+    },
+    "B": {
+      "item": "minecraft:bookshelf"
+    }
+  },
+  "pattern": [
+    "NEN",
+    "APA",
+    "OBO"
+  ],
+  "result": {
+    "id": "attributearch:enchanting_altar",
+    "count": 1
+  }
+}

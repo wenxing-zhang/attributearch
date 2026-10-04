@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "top": "attributearch:block/enchanting_altar_top",
+    "bottom": "attributearch:block/enchanting_altar_bottom",
+    "side": "attributearch:block/enchanting_altar_side",
+    "particle": "attributearch:block/enchanting_altar_side"
+  }
+}

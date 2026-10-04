@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "E": {
+      "item": "attributearch:enchanting_altar"
+    },
+    "A": {
+      "item": "attributearch:attribute_altar"
+    }
+  },
+  "pattern": [
+    "EEE",
+    "EAE",
+    "EEE"
+  ],
+  "result": {
+    "id": "attributearch:wenxing_totem",
+    "count": 1
+  }
+}

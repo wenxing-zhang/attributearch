@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "E": {
+      "item": "attributearch:enchanting_altar"
+    },
+    "B": {
+      "item": "minecraft:bow"
+    }
+  },
+  "pattern": [
+    "EEE",
+    "EBE",
+    "EEE"
+  ],
+  "result": {
+    "id": "attributearch:wenxing_bow",
+    "count": 1
+  }
+}

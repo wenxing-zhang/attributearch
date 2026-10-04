@@ -1,0 +1,48 @@
+pluginManagement {
+    repositories {
+        mavenLocal()
+        maven {
+            name = "NeoForged"
+            url = uri("https://maven.neoforged.net/releases")
+        }
+        maven {
+            name = "LocalMaven"
+            url = uri("local-maven")
+        }
+        gradlePluginPortal()
+    }
+}
+
+plugins {
+    id 'org.gradle.toolchains.foojay-resolver-convention' version '1.0.0'
+}
+
+dependencyResolutionManagement {
+    repositoriesMode = RepositoriesMode.PREFER_PROJECT
+    repositories {
+        mavenLocal()
+        maven {
+            name = "LocalMaven"
+            url = uri("local-maven")
+        }
+        maven {
+            name = "NeoForged"
+            url = uri("https://maven.neoforged.net/releases")
+        }
+        mavenCentral()
+    }
+}
+
+// Local mirror for flaky access to maven.neoforged.net (moddev-config.json).
+gradle.projectsLoaded {
+    def localMaven = uri("local-maven")
+    gradle.rootProject.allprojects { p ->
+        p.repositories {
+            mavenLocal()
+            maven {
+                name = "LocalMaven"
+                url = localMaven
+            }
+        }
+    }
+}

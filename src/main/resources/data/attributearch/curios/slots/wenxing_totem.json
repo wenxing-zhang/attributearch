@@ -1,0 +1,7 @@
+{
+  "size": 1,
+  "order": 10,
+  "icon": "attributearch:slot/empty_wenxing_totem",
+  "use_native_gui": true,
+  "drop_rule": "DEFAULT"
+}
